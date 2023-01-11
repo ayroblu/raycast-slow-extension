@@ -3,6 +3,7 @@ import React from "react";
 import { getCacheManager } from "./cache-manager";
 
 export default function Command() {
+  console.log("initial render");
   const [search, setSearch] = React.useState("");
   return (
     <List onSearchTextChange={setSearch}>
